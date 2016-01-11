@@ -7,7 +7,7 @@ gulp.task('css', function () {
       require('postcss-nesting'),
       require('lost'),
       require('autoprefixer'),
-      require('cssnext')
+      require('postcss-cssnext')
     ]))
     .pipe(gulp.dest('static/css/'));
 });

@@ -8,9 +8,9 @@
   },
   "devDependencies": {
     "autoprefixer": "^6.2.3",
-    "cssnext": "^1.8.4",
     "gulp": "^3.9.0",
     "lost": "^6.6.3",
+    "postcss-cssnext": "^2.4.0",
     "postcss-nesting": "^2.1.1"
   },
   "scripts": {},

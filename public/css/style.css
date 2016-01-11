@@ -37,6 +37,7 @@ body {
   font-family: 'Helvetica', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
 }
 
 main {
@@ -71,6 +72,7 @@ p {
 .Bio {
   color: #CCC;
   text-align: left;
+  padding: 24px;
   padding: 2rem;
   position: absolute;
   top: 50%;
@@ -82,10 +84,12 @@ p {
 
   .Bio {
     padding-top: 20rem;
+    top: auto;
     top: initial;
     bottom: 0;
     -webkit-transform: none;
             transform: none;
+    background: -webkit-linear-gradient(transparent, #000000);
     background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, .9));
     background: linear-gradient(transparent, rgba(0, 0, 0, .9));
     text-align: center;
@@ -100,14 +104,17 @@ p {
 }
 
 .Bio-name {
+  font-size: 36px;
   font-size: 3rem;
   line-height: 1;
   margin: 0;
 }
 
 .Bio-headline {
+  font-size: 16.799px;
   font-size: 1.4rem;
   margin: 0;
+  margin-bottom: 36px;
   margin-bottom: 3rem;
 }
 
@@ -116,10 +123,12 @@ p {
 }
 
 .Bio-description {
+  font-size: 12px;
   font-size: 1rem;
 }
 
 .Bio-footer {
+  margin-top: 48px;
   margin-top: 4rem;
 }
 
@@ -127,10 +136,14 @@ p {
   border: none;
   border-bottom: 3px solid;
   background-color: #68c3a3;
+  border-color: #333333;
   border-color: rgba(51, 51, 51, 0.15);
   border-radius: 4px;
+  font-size: 12px;
   font-size: 1rem;
+  margin: 0 12px 12px 0;
   margin: 0 1rem 1rem 0;
+  padding: 12px 18px;
   padding: 1rem 1.5rem;
   color: #FFF;
   text-transform: uppercase;
@@ -150,7 +163,9 @@ p {
 .Btn--resume,
 .Btn--email {
   background-repeat: no-repeat;
+  background-position: 12px center;
   background-position: 1rem center;
+  padding-left: 42px;
   padding-left: 3.5rem;
 }
 
@@ -163,6 +178,7 @@ p {
 }
 
 .Row-content--enlarge {
+  font-size: 14.399px;
   font-size: 1.2rem
 }
 
@@ -175,8 +191,10 @@ p {
   max-width: 980px;
   margin-left: auto;
   margin-right: auto;
+  margin: 36px auto;
   margin: 3rem auto;
   font-family: Georgia, serif;
+  color: #000000;
   color: rgba(0,0,0,0.8);
 
   a {
@@ -201,10 +219,12 @@ p {
 }
 
 .Resume a:hover {
+  color: #000000;
   color: rgba(0,0,0,1);
 }
 
 .Resume h4 {
+  color: #000000;
   color: rgba(0,0,0,0.6);
 }
 
@@ -234,7 +254,9 @@ p {
 .Resume-header {
   *zoom: 1;
   overflow: hidden;
+  margin: 24px 0;
   margin: 2rem 0;
+  padding-bottom: 18px;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid rgba(0,0,0,0.1);
 }
@@ -251,7 +273,7 @@ p {
 }
 
 .Resume-title {
-  width: calc(99.99% * 2/3 - (30px - 30px * 2/3))
+  width: calc(99.99% * 2/3 - 10px)
 }
 
 .Resume-title:nth-child(n) {
@@ -274,19 +296,22 @@ p {
 
 .Resume-title h2 {
   text-transform: uppercase;
+  letter-spacing: 9.6px;
   letter-spacing: 0.8rem;
+  font-size: 18px;
   font-size: 1.5rem;
   font-weight: 500;
 }
 
 .Resume-title h1 {
+  font-size: 36px;
   font-size: 3rem;
   text-transform: uppercase;
   line-height: 1;
 }
 
 .Resume-info {
-  width: calc(99.99% * 1/3 - (30px - 30px * 1/3));
+  width: calc(99.99% * 1/3 - 20px);
   padding: 0;
   margin: 3px 0
 }
@@ -313,6 +338,7 @@ p {
   font-family: 'Helvetica', sans-serif;
   text-decoration: none;
   color: #333;
+  padding-left: 18px;
   padding-left: 1.5rem;
   line-height: 1.2;
   background-size: contain;
@@ -321,6 +347,7 @@ p {
 
 .Resume-info li {
   list-style: none;
+  padding: 2.4px 0;
   padding: 0.2rem 0;
 }
 
@@ -338,7 +365,9 @@ p {
 
 .Row {
   *zoom: 1;
+  margin-bottom: 24px;
   margin-bottom: 2rem;
+  padding-bottom: 12px;
   padding-bottom: 1rem;
   border-bottom: 1px solid rgba(0,0,0,0.1);
 }
@@ -355,8 +384,9 @@ p {
 }
 
 .Row-label {
-  width: calc(99.99% * 1/5 - (30px - 30px * 1/5));
+  width: calc(99.99% * 1/5 - 24px);
   text-transform: uppercase;
+  font-size: 14.399px;
   font-size: 1.2rem;
   letter-spacing: 1px;
   text-align: right;
@@ -381,7 +411,7 @@ p {
 }
 
 .Row-content {
-  width: calc(99.99% * 4/5 - (30px - 30px * 4/5))
+  width: calc(99.99% * 4/5 - 6px)
 }
 
 .Row-content:nth-child(n) {
@@ -412,6 +442,7 @@ p {
 
 .tags {
   font-family: 'Helvetica', sans-serif;
+  font-size: 9.6px;
   font-size: 0.8rem;
 }
 
@@ -433,8 +464,8 @@ p {
 }
 
 .Row-list li {
-  width: calc(99.999999% * 1/3);
-  height: calc(99.999999% * 1/3);
+  width: 33.33333%;
+  height: 33.33333%;
   list-style: none;
   border-bottom: 1px solid rgba(0,0,0,0.1);
   line-height: 2
@@ -466,13 +497,16 @@ p {
 
 .Row-list li:nth-last-child(-n+2) {
   border-bottom: none;
+  margin-bottom: 12px;
   margin-bottom: 1rem;
 }
 
 .Item {
   position: relative;
   border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding-bottom: 24px;
   padding-bottom: 2rem;
+  margin-bottom: 24px;
   margin-bottom: 2rem
 }
 
@@ -487,10 +521,12 @@ p {
 
 .date {
   position: absolute;
+  top: 26.4px;
   top: 2.2rem;
   right: 0;
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 9.6px;
   font-size: 0.8rem;
 }
 
@@ -507,7 +543,7 @@ p {
 
   .Resume-title,
   .Resume-info {
-    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));
+    width: 99.99%;
     text-align: center;
   }
 
@@ -535,7 +571,7 @@ p {
 
   .Row-label,
   .Row-content {
-    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));
+    width: 99.99%;
   }
 
   .Row-label:nth-child(n),
@@ -570,8 +606,8 @@ p {
   }
 
   .Row-list li {
-    width: calc(99.999999% * 1/2);
-    height: calc(99.999999% * 1/2);
+    width: 50%;
+    height: 50%;
   }
 
   .Row-list li:nth-child(n) {
