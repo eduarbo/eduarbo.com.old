@@ -1,0 +1,14 @@
+<head>
+    {{ .Hugo.Generator }}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eduardo Ruiz">
+    <meta name="description" content="">
+
+    <title>{{ .Title }} {{ if ne .Title .Site.Title }} &middot; {{ .Site.Title }}{{ end }}</title>
+
+    {{ "<!-- Custom CSS -->" | safeHTML }}
+    <link href="{{ .Site.BaseURL }}css/style.css" rel="stylesheet" media="all">
+    <!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> -->
+    <!-- <link rel="apple-touch-icon" href="/apple-touch-icon.png" /> -->
+</head>

@@ -1,0 +1,26 @@
+{
+  "name": "eduarbo.com",
+  "version": "0.0.1",
+  "description": "My personal website",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-postcss": "^6.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.2.3",
+    "cssnext": "^1.8.4",
+    "gulp": "^3.9.0",
+    "lost": "^6.6.3",
+    "postcss-nesting": "^2.1.1"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduarbo/eduarbo.github.io.git"
+  },
+  "author": "Eduardo Ruiz",
+  "bugs": {
+    "url": "https://github.com/eduarbo/eduarbo.github.io/issues"
+  },
+  "homepage": "https://github.com/eduarbo/eduarbo.github.io#readme"
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    {{ partial "head.html" . }}
+
+    <body>
+        <article>
+            <header>
+                <h1>{{ .Title }}</h1>
+            </header>
+            <ul>
+                {{ range .Data.Pages }}
+                <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                {{ end }}
+            </ul>
+            <footer>
+                <p><span id="footer-copyright">{{ .Params.copyright }}</span><span id="footer-license">{{ .Params.license }}</span></p>
+            </footer>
+        </article>
+    </body>
+</html>
