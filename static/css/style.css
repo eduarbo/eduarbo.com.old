@@ -37,6 +37,7 @@ body {
   font-family: 'Helvetica', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-print-color-adjust: exact;
   margin: 0;
 }
 
@@ -197,6 +198,11 @@ p {
   color: #000000;
   color: rgba(0,0,0,0.8);
 
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
   a {
     background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.8) 25%, rgba(0,0,0,0) 25%);
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.8) 25%, rgba(0,0,0,0) 25%);
@@ -205,12 +211,16 @@ p {
 
 .Resume:before {
 
+  @page {}
+
   a {}
   content: '';
   display: table;
 }
 
 .Resume:after {
+
+  @page {}
 
   a {}
   content: '';
@@ -536,7 +546,7 @@ p {
   }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .hide {
     display: none;
   }
